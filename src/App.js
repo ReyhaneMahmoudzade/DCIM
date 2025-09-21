@@ -1,6 +1,6 @@
 import routes from "./routes";
 import { useRoutes } from 'react-router'
-import Topbar from "./components/topbar/Topbar";
+import TopbarAndSidebar from "./components/topbarAndSidebar/TopbarAndSidebar";
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Topbar />
+      <TopbarAndSidebar />
       {router}
     </>
   );
