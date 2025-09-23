@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './TopbarAndSidebar.css'
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -52,7 +53,7 @@ function TopbarAndSidebar(props) {
     <div>
       <Toolbar />
       <List component="nav" aria-label="main mailbox folders">
-        <Link to='/'>
+        <Link to='/' className='sidebarLink'>
           <ListItemButton
             selected={selectedIndex === 0}
             onClick={(event) => handleListItemClick(event, 0)}
@@ -60,18 +61,34 @@ function TopbarAndSidebar(props) {
             <ListItemText primary="Home" />
           </ListItemButton>
         </Link> 
-        <Link to='/datacenter'>
+        <Link to='/add-datacenter' className='sidebarLink'>
           <ListItemButton
             selected={selectedIndex === 1}
             onClick={(event) => handleListItemClick(event, 1)}
           >
-            <ListItemText primary="Datacenters" />
+            <ListItemText primary="Add Datacenters" />
           </ListItemButton>
         </Link> 
-        <Link to='/rack'>
+        <Link to='/datacenter' className='sidebarLink'>
           <ListItemButton
             selected={selectedIndex === 2}
             onClick={(event) => handleListItemClick(event, 2)}
+          >
+            <ListItemText primary="Datacenters" />
+          </ListItemButton>
+        </Link> 
+        <Link to='/add-rack' className='sidebarLink'>
+          <ListItemButton
+            selected={selectedIndex === 3}
+            onClick={(event) => handleListItemClick(event, 3)}
+          >
+            <ListItemText primary="Add Racks" />
+          </ListItemButton>
+        </Link> 
+        <Link to='/rack' className='sidebarLink'>
+          <ListItemButton
+            selected={selectedIndex === 4}
+            onClick={(event) => handleListItemClick(event, 4)}
           >
             <ListItemText primary="Racks" />
           </ListItemButton>
@@ -144,12 +161,12 @@ function TopbarAndSidebar(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box
+      {/* <Box
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-      </Box>
+      </Box> */}
     </Box>
   );
 }

@@ -1,7 +1,15 @@
-import React from 'react'
+import './Home.css'
+import HomeFeature from "../../components/homeFeature/HomeFeature"
+
 
 export default function Home() {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <>
+            <div className="h-container">
+                {/* <HomeFeature />
+                <HomeFeature />
+                <HomeFeature /> */}
+            </div>
+        </>
+    )
 }
