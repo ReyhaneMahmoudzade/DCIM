@@ -1,4 +1,25 @@
 .sidebarLink {
-    color: black;
+    color: #f8f7f5;
     text-decoration: none;
+}
+
+.css-1lwhjos-MuiPaper-root-MuiDrawer-paper {
+    background-color: #1B3C53 !important;
+}
+
+
+.css-1ygil4i-MuiToolbar-root{
+    background-color: #f8f7f5;
+}
+
+.css-5lnhk4-MuiTypography-root {
+    color: #1B3C53;
+}
+
+.css-1umw9bq-MuiSvgIcon-root{
+    color: #1B3C53;
+}
+
+.css-cyqh1t-MuiPaper-root-MuiDrawer-paper{
+    background-color: #1B3C53 !important;
 }

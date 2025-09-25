@@ -7,7 +7,7 @@ function App() {
   let router = useRoutes(routes)
 
   return (
-    <div style={{display:'flex', marginTop:'70px'}}>
+    <div style={{display:'flex', marginTop:'70px', padding: '30px'}}>
       <TopbarAndSidebar />
       {router}
     </div>
