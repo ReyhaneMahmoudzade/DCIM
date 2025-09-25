@@ -2,12 +2,35 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const data = [
     {
-        name: 'Page A',
-        uv: 4000,
-        pv: 2400,
-        amt: 2400,
+        name: 'sat',
+        status: 10
     },
-    
+    {
+        name: 'sun',
+        status: 12
+    },
+    {
+        name: 'mon',
+        status: 5
+    },
+    {
+        name: 'tue',
+        status: 9
+    },
+    {
+        name: 'wed',
+        status: 7
+    },
+    {
+        name: 'thu',
+        status: 25
+    },
+    {
+        name: 'fri',
+        status: 0
+    },
+
+
 ];
 
 export default function Chart() {
@@ -29,7 +52,7 @@ export default function Chart() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="pv" stroke="#456882" activeDot={{ r: 8 }} />
+                <Line type="monotone" dataKey="status" stroke="#456882" activeDot={{ r: 8 }} />
             </LineChart>
         </ResponsiveContainer>
     );

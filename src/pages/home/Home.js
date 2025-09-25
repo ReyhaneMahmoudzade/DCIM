@@ -25,16 +25,28 @@ export default function Home() {
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
                 <Grid size={{ xs: 12, md: 4 }}>
-                    <Item><HomeFeature /></Item>
+                    <Item><HomeFeature
+                        text1='Summary'
+                        text2='5'
+                        text4='total'
+                    /></Item>
                 </Grid>
                 <Grid size={{ xs: 12, md: 4 }}>
-                    <Item><HomeFeature /></Item>
+                    <Item><HomeFeature
+                        text1='Datacenters'
+                        text2='3'
+                        text4='sample text'
+                    /></Item>
                 </Grid>
                 <Grid size={{ xs: 12, md: 4 }}>
-                    <Item><HomeFeature /></Item>
+                    <Item><HomeFeature
+                        text1='Racks'
+                        text2='2'
+                        text4='sample text'
+                    /></Item>
                 </Grid>
                 <Grid size={{ xs: 12, md: 12 }}>
-                    <div style={{ width: '100%', height: 400 }}>
+                    <div style={{ width: '100%', height: 400, marginTop: 30 }}>
                         <Chart />
                     </div>
                 </Grid>

@@ -1,41 +1,30 @@
-import * as React from 'react';
-import './HomeFeature.css'
+import './HomeFeature.css';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
 
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-        Word of the Day
-      </Typography>
-      <Typography variant="h5" component="div">
-        
-      </Typography>
-      <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>adjective</Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
-    </CardContent>
-  </React.Fragment>
-);
-
-export default function OutlinedCard() {
+export default function HomeFeature({ text1, text2, text4 }) {
   return (
     <Box>
-      <Card>{card}</Card>
+      <Card>
+        <CardContent>
+          <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
+            {text1}
+          </Typography>
+          <Typography variant="h5" component="div">
+            {text2}
+          </Typography>
+          <Typography variant="body2">
+            {text4}
+          </Typography>
+        </CardContent>
+      </Card>
     </Box>
   );
 }
-
 
 
 
