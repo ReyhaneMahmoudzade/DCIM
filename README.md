@@ -9,12 +9,16 @@ git clone https://github.com/ReyhaneMahmoudzade/DCIM
 cd DCIM
 npm install
 npm start
+```
 
-## تکنولوژی‌ها
-
+## تکنولوژی ها
 - React – فریم‌ورک اصلی برای ساخت رابط کاربری
 - MUI (Material UI) – برای طراحی کامپوننت‌های مدرن و واکنش‌گرا
 - React Router DOM – برای مدیریت مسیرها و صفحات SPA
 - Recharts – برای نمایش نمودارهای تعاملی و گرافیکی
 - MUI Data Grid – برای نمایش جدول‌های حرفه‌ای با قابلیت فیلتر، مرتب‌سازی و صفحه‌بندی
+
+
+
+
 
